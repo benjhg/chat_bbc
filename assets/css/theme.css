@@ -67,6 +67,26 @@
     --font-family-sans-serif: Open Sans, sans-serif;
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
+
+*::-webkit-scrollbar {
+    width: 10px;               /* width of the entire scrollbar */
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #90afc5; 
+    border-radius: 20px;         /* color of the tracking area */
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(80, 80, 80);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+   
+  }
+  * {
+      scrollbar-width: thin;          /* "auto" or "thin" */
+      scrollbar-color: blue orange;   /* scroll thumb and track */
+    }
+
 *,
 ::after,
 ::before {
@@ -89,8 +109,11 @@ hgroup,
 main,
 nav,
 section {
+
     display: block;
 }
+
+
 body {
     font-family: Open Sans, sans-serif;
     font-size: 1rem;
@@ -100,6 +123,7 @@ body {
     text-align: left;
     color: var(--bs-body-color);
     background-color: #bbbbbb;
+    background-image: url(/assets/img/fondo_bbc.png);
 }
 [tabindex="-1"]:focus:not(:focus-visible) {
     outline: 0 !important;
@@ -4178,6 +4202,7 @@ input[type="submit"].btn-block {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    height: 9em;
 }
 .navbar .container,
 .navbar .container-fluid,
@@ -6340,8 +6365,9 @@ a.close.disabled {
     vertical-align: text-top !important;
 }
 .bg-primary {
-    background-color: #6c6c6c !important;
+    background-color: #90afc5 !important;
 }
+
 a.bg-primary:focus,
 a.bg-primary:hover,
 button.bg-primary:focus,
@@ -7139,7 +7165,7 @@ button.bg-darker:hover {
         justify-content: center !important;
     }
     .justify-content-lg-between {
-        justify-content: space-between !important;
+        justify-content: center !important;
     }
     .justify-content-lg-around {
         justify-content: space-around !important;
@@ -12435,8 +12461,8 @@ a.text-darker:hover {
 }
 .avatar-sm {
     font-size: 0.875rem;
-    width: 10em;
-    height: 10em;
+    width: 14em;
+    height: 9em;
 }
 
 .avatar-xs {
@@ -13680,7 +13706,8 @@ a.btn-icon-only {
 }
 .footer {
     padding: 30px 0;
-    background: #bbbbbb;
+    color: #ffffff;
+   
 }
 .footer .col-footer .heading {
     font-size: 0.875rem;
@@ -21232,6 +21259,10 @@ pre > code.highlight {
 }
 .ct-footer-links li + li {
     margin-left: 1rem;
+}
+
+.white{
+    color: white;
 }
 
 .tama1{
